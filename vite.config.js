@@ -1,4 +1,5 @@
-//import VitePluginMergeCss from 'vite-plugin-merge-css';
+import path from 'node:path';
+import VitePluginMergeCss from 'vite-plugin-merge-css';
 
 export default {
 	build: {
@@ -14,5 +15,5 @@ export default {
 		},
 		cssCodeSplit: true,
 	},
-	//plugins: [VitePluginMergeCss()],
+	plugins: [VitePluginMergeCss()],
 };
