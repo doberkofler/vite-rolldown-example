@@ -1,0 +1,14 @@
+{
+	"name": "example",
+	"type": "module",
+	"license": "MIT",
+	"author": "Dieter Oberkofler",
+	"scripts": {
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"@types/node": "24.1.0",
+		"rolldown-vite": "7.0.12",
+		"vite-plugin-merge-css": "0.3.0"
+	}
+}
