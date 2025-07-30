@@ -11,17 +11,17 @@
 			<h1>Welcome</h1>
 			<p>Select a page to visit:</p>
 			<div class="button-group">
-				<button id="btnPageA">Go to Page A</button>
-				<button id="btnPageB">Go to Page B</button>
+				<button data-url="page_a.html">Go to Page A</button>
+				<button data-url="page_b.html">Go to Page B</button>
+				<button data-url="page_c.html">Go to Page C</button>
 			</div>
 		</div>
 		<script>
-			document.getElementById('btnPageA').addEventListener('click', () => {
-				window.location.href = 'page_a.html';
-			});
-
-			document.getElementById('btnPageB').addEventListener('click', () => {
-				window.location.href = 'page_b.html';
+			document.querySelector('.button-group').addEventListener('click', (event) => {
+				const target = event.target;
+				if (target instanceof HTMLButtonElement && target.dataset.url) {
+					window.location.href = target.dataset.url;
+				}
 			});
 		</script>
 	</body>

@@ -9,7 +9,9 @@
 	},
 	"devDependencies": {
 		"@types/node": "24.1.0",
+		"fast-glob": "^3.3.3",
 		"rolldown-vite": "7.0.12",
+		"tinymce": "8.0.1",
 		"vite-plugin-merge-css": "0.3.0"
 	}
 }
